@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:orientation="vertical"
+        android:background="@drawable/tback"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find Your Tree"
+            android:fontFamily="monospace"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make your garden like a forest"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:textColor="@android:color/black"/>
+
+        <SearchView
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="beginner"
+                android:fontFamily="monospace"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:background="@drawable/flower_btn" />
+
+            <Button
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="tropical"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:background="@drawable/flower_btn"
+                android:layout_marginRight="10dp"/>
+
+
+            <Button
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="colourful"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:background="@drawable/flower_btn"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="18dp">
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Most Searched"
+            android:textColor="#013220"
+            android:textSize="20dp"/>
+
+        <ListView
+            android:id="@+id/treeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/greenback">
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_width="170sp"
+        android:layout_height="170sp"
+        android:layout_gravity="center"
+        android:src="@drawable/plant" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:text="GREENIFY"
+        android:gravity="center_horizontal"
+        android:textSize="40sp"
+        android:fontFamily="monospace"
+        android:textColor="#013220"
+        android:textStyle="bold"
+         />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:fontFamily="monospace"
+            android:textColor="@android:color/black"
+            android:id="@+id/loginBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Log in"
+            android:textSize="20sp" />
+
+        <TextView
+            android:fontFamily="monospace"
+            android:id="@+id/guestBox"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Guest?"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
